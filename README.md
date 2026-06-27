@@ -8,6 +8,8 @@
 
 Run the script provided in this repository on the VM where you want Vault to be installed.
 
+Terraform code to create ec2 instance and run the script
+
 ```hcl
 provider "aws" {
   region = "us-east-1"

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./terraform
+        working-directory: ./
 
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
       - name: Fetch Keys from Vault
         uses: hashicorp/vault-action@v3
         with:
-          url: http://54.174.18.161:8200
+          url: http://<EC2-ID>:<PORT>
           role: gh-actions-role
           method: jwt
           jwtGithubAudience: sts.amazonaws.com

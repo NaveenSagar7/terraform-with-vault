@@ -6,7 +6,7 @@
 
 ---
 
-Run the script provided in this repository on the VM where you want Vault to be installed through Terraform.
+Run the script provided in this repository on the VM where you want Vault to be installed.
 
 ```hcl
 provider "aws" {
